@@ -1,7 +1,7 @@
 /*
 * Author: Robert Dragan
 * Github: nucata
-* Date:  
+* Date: Do 29 Sep 2022 22:20:12 CEST
 * Description: This program returns the amount of times a specific integer is repeted in an array.
 */
 
