@@ -1,7 +1,7 @@
 /*
 * Author: Robert Dragan
 * Github: nucata
-* Date:  
+* Date:   30 Sep 2022 15:48:19
 * Description: This program checks if a given string is or not palindrome. If it is returns 1 and prints "Yeey". Else returns 0 and prints "NO, No, n..."
 */
 
