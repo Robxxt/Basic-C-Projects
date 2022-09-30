@@ -2,7 +2,7 @@
 * Author: Robert Dragan
 * Github: nucata
 * Date:  30 Sep 2022 15:45:05
-* Description: File where I save common used functions in order to reuse them.
+* Description: This functions are made to be reused in any other project.
 */
 
 int	ft_strlen(char *str) {
