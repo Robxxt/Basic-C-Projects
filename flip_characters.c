@@ -8,7 +8,7 @@
 #include <stdio.h>
 
 
-char	*flip(char *str) {
+void	flip(char *str) {
 	int	index;
 
 	while (str[index] != '\0') {
@@ -20,7 +20,6 @@ char	*flip(char *str) {
 			str[index] += 32;
 		index++;
 	}
-	return (str);
 }
 
 int	main(void) {
