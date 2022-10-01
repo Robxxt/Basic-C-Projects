@@ -12,7 +12,7 @@ int	is_prime(int n) {
 
 	if (n < i)
 		return (0);
-	while (i < n) {
+	while (i <= (n / 2)) {
 		if (n % i == 0)
 			return (0);
 		i++;
@@ -21,14 +21,7 @@ int	is_prime(int n) {
 }
 
 int	main(void) {
-	printf("Number: %d\tResult: %d\tExpected: %d\n", 10, is_prime(10), 0);
-	printf("Number: %d\tResult: %d\tExpected: %d\n", 1, is_prime(1), 0);
-	printf("Number: %d\tResult: %d\tExpected: %d\n", -1,is_prime(-1), 0);
-	printf("Number: %d\tResult: %d\tExpected: %d\n", 15, is_prime(15), 0);
-	printf("Number: %d\tResult: %d\tExpected: %d\n", 7, is_prime(7), 1);
-	printf("Number: %d\tResult: %d\tExpected: %d\n", 41, is_prime(41), 1);
-	printf("Number: %d\tResult: %d\tExpected: %d\n", 5, is_prime(5), 1);
-	printf("Number: %d\tResult: %d\tExpected: %d\n", 91, is_prime(91), 1);
+	printf("Number: %d\tResult: %d\tExpected: %d\n", 36643, is_prime(36643), 1);
 	return (0);
 }
 
