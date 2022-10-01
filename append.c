@@ -40,6 +40,8 @@ int	main(void) {
 	res = append(str1, str);
 	res = append(res, str2);
 	printf("%s\n", res);
+
+	free(res);
 	return (0);
 }
 
