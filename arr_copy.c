@@ -7,11 +7,12 @@
 
 #include <stdio.h>	// printf
 #include <stdlib.h>	//malloc
-
+#include "functions.h"	//fail
 int	*cpy_arr(int *arr, int size) {
 	int	*cpy = malloc(size * sizeof(int));
 	int	index = 0;
-
+	
+	if (cpy	== NULL) fail();
 	while (index < size) {
 		cpy[index] = arr[index];
 		index++;
