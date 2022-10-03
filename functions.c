@@ -7,6 +7,28 @@
 
 #include <stdlib.h>	//exit
 #include <unistd.h>	//write
+#include <stdio.h>	//printf
+
+int	test_int(int out, int test) {
+	if (out == test) {
+		printf("# Test Succeeded!\n\n");
+		return (1);
+	}
+	printf("# Test Failed!\n");
+	printf("Out: %d\tTest: %d\n\n", out, test);
+	return (0);
+}
+
+int	test_str(char *out, char *test) {
+	if (out == test) {
+		printf("# Test Succeeded!\n\n");
+		return (1);
+	}
+	printf("# Test Failed!\n");
+	printf("Out: %s\nTest: %s\n\n", out, test);
+	return (0);
+}
+
 
 int	ft_strlen(char *str) {
 	int	index = 0;
