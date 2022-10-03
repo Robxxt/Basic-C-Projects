@@ -19,23 +19,32 @@ int	test_int(int out, int test) {
 	return (0);
 }
 
-int	test_str(char *out, char *test) {
-	if (out == test) {
-		printf("# Test Succeeded!\n\n");
-		return (1);
-	}
-	printf("# Test Failed!\n");
-	printf("Out: %s\nTest: %s\n\n", out, test);
-	return (0);
-}
-
-
 int	ft_strlen(char *str) {
 	int	index = 0;
 
 	while (str[index] != '\0')
 		index++;
 	return (index);
+}
+
+int	test_str(char *out, char *test) {
+	int	index = 0;
+
+	if (ft_strlen(out) != ft_strlen(test)) {
+		printf("# Test Failed!\n");
+		printf(" Out: %s\nTest: %s\n\n", out, test);
+		return (0);
+	}
+	while (index < ft_strlen(out)) {
+		if (out[index] != test[index]) {
+			printf("# Test Failed!\n");
+			printf(" Out: %s\nTest: %s\n\n", out, test);
+			return (0);
+		}
+		index++;
+	}
+	printf("# Test Succeeded!\n\n");
+	return (1);
 }
 
 void	ft_putchar(char c) {
