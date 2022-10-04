@@ -1,6 +1,8 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
+
+void	b_sort(int *arr, size_t n);
 int	test_str(char *out, char *test);
 int	test_int(int out, int test);
 int	ft_strlen(char *str);

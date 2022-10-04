@@ -9,6 +9,26 @@
 #include <unistd.h>	//write
 #include <stdio.h>	//printf
 
+void	b_sort(int *arr, size_t n) {
+	int	len = (int) n;
+	int	temp;
+	int	i = 0;
+	int	j;
+
+	while (i < len) {
+		j = 0;
+		while (j < len - 1) {
+			if (arr[j] > arr[j + 1]) {
+				temp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = temp;
+			}
+			j++;
+		}
+		i++;
+	}
+}
+
 int	test_int(int out, int test) {
 	if (out == test) {
 		printf("# Test Succeeded!\n\n");
