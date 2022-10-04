@@ -27,7 +27,7 @@ char	*dec_to_bin(unsigned int num) {
 	// Final bin size to DMA the end size.
 	int	index;
 
-	bin = malloc(512 * sizeof(char));
+	bin = malloc(256 * sizeof(char));
 	if (bin == NULL)
 		fail();
 	index = 0;
